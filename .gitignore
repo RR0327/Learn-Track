@@ -1,49 +1,64 @@
 # A professional gitignore for all type projects
 
-# Byte-compiled / optimized / DLL files
+# Python / Django
+# ================
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Virtual environment
-venv/
-.env
-*.env
-
-# Django-related
-*.log
+*.pyo
+*.pyd
+*.sqlite3
 db.sqlite3
-/media/
-/staticfiles/
 /local_settings.py
 
-# Node.js dependencies
+# Virtual Environment
+venv/
+.env/
+*.env
+
+# Django static/media
+/staticfiles/
+/media/
+/*.pot
+
+# Logs
+logs/
+*.log
+
+# Node.js / React
+# ================
 node_modules/
+build/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
 
 # Static and compiled assets
 static/
 *.css.map
 *.js.map
 
-# IDE and editor settings
+# IDE / Editor
+# =============
 .vscode/
 .idea/
 *.swp
 
-# MacOS and system files
+# System / OS
+# =============
 .DS_Store
 Thumbs.db
 
-# Coverage and testing
+# Coverage / Testing
+# ===================
 .coverage
 *.cover
 htmlcov/
 
-# Logs and debugging
-logs/
-*.log
-
-# Ignore migrations (optional)
+# Django Migrations (optional)
+# ============================
 */migrations/__pycache__/
 */migrations/*.pyc
 */migrations/*.pyo
