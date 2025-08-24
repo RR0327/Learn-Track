@@ -1,0 +1,20 @@
+{
+    "students": [
+        {
+            "name": "Sami",
+            "age": "22",
+            "address": "Dhaka",
+            "student_id": "S001",
+            "grades": {},
+            "courses": []
+        }
+    ],
+    "courses": [
+        {
+            "course_name": "CSE",
+            "course_code": "CSE414",
+            "instructor": "RR",
+            "students": []
+        }
+    ]
+}
